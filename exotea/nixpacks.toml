@@ -3,5 +3,8 @@
 [phases.setup]
 nixPkgs = ["php82", "php82Extensions.pdo", "php82Extensions.pdo_mysql"]
 
+[phases.build]
+cmds = ["echo 'build done'"]
+
 [start]
 cmd = "php -S 0.0.0.0:$PORT"
